@@ -4,7 +4,7 @@ $('document').ready(function(){
 		e.preventDefault();
 		var searchTerms = $("#img-category").val();
 		console.log(searchTerms);
-		var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=fa73024ce9027e50ab3a8e348d862ccd&tags="+searchTerms+"&safe_search=1&per_page=25&format=json&nojsoncallback=1"
+		var url = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=ecb0a01b078fc1b7e83e26ab6a0ccd72&tags="+searchTerms+"&safe_search=1&per_page=25&format=json&nojsoncallback=1"
 		$.ajax({
 			type: "GET",
 			url: url,
@@ -21,7 +21,7 @@ function showImg(response){
 	$("#img-category").val("");
 	response.photos.photo.forEach(function(img){
 		var imgSrc = "http://farm" + img.farm + ".static.flickr.com/" + 
-        img.server + "/" + img.id + "_" + img.secret + "_" + "c.jpg";
+        img.server + "/" + img.id + "_" + img.secret + "_" + "b.jpg";
 		var html = "<img src='" + imgSrc +"'>";
 		$("#scroll-area").append(html)
 	});
