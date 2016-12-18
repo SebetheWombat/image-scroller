@@ -21,8 +21,8 @@ function showImg(response){
 	$("#img-category").val("");
 	response.photos.photo.forEach(function(img){
 		var imgSrc = "http://farm" + img.farm + ".static.flickr.com/" + 
-        img.server + "/" + img.id + "_" + img.secret + "_" + "z.jpg";
-		var html = "<img src='" + imgSrc +"' class='img-responsive'>";
+        img.server + "/" + img.id + "_" + img.secret + "_" + "c.jpg";
+		var html = "<img src='" + imgSrc +"'>";
 		$("#scroll-area").append(html)
 	});
 }
