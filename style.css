@@ -18,11 +18,11 @@ form{
 	margin:25px auto;
 	box-shadow: 3px 3px 5px #888;
 	overflow:scroll;
-	white-space: nowrap;
+	
 }
 img{
 	margin:0 auto;
-	display: inline-block;
+	display: block;
 	height: 100%;
 	padding:5px;
 	border-radius: 15px;

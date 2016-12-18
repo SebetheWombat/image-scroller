@@ -22,7 +22,7 @@ function showImg(response){
 	response.photos.photo.forEach(function(img){
 		var imgSrc = "http://farm" + img.farm + ".static.flickr.com/" + 
         img.server + "/" + img.id + "_" + img.secret + "_" + "z.jpg";
-		var html = "<img src='" + imgSrc +"'>";
+		var html = "<img src='" + imgSrc +"' class='img-responsive'>";
 		$("#scroll-area").append(html)
 	});
 }
